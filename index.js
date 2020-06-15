@@ -10,9 +10,9 @@ const jokeRequest = Axios.get(
 Axios.all([jokeRequest])
   .then(
     Axios.spread((...responses) => {
-      const jokeResponse = responses[0].data.value;
+      const jokeResponse = responses[0].data.value.joke;
       const Tweet = () => {
-        return `${jokeResponse}\n\n#javascript \n#100DaysOfCode \n#programming \n#Python \#chucknorris`;
+        return `${jokeResponse}\n\n#100DaysOfCode \n#CodeNewbie \n#rust \n#nodejs`;
       };
       Bot.tweet(Tweet());
     }),
