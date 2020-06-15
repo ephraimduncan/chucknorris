@@ -4,8 +4,7 @@ const { default: Axios } = require("axios");
 const Bot = new TwitterBot(config);
 
 const jokeRequest = Axios.get(
-  // "http://api.icndb.com/jokes/random?limitTo=[nerdy]",
-  "https://api.chucknorris.io/jokes/random?category=dev",
+  "http://api.icndb.com/jokes/random?limitTo=[nerdy]",
 );
 
 Axios.all([jokeRequest])
