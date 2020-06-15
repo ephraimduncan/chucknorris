@@ -12,7 +12,7 @@ Axios.all([jokeRequest])
     Axios.spread((...responses) => {
       const jokeResponse = responses[0].data.value.joke;
       const Tweet = () => {
-        return `${jokeResponse}\n\n#100DaysOfCode \n#CodeNewbie \n#rust \n#nodejs`;
+        return `${jokeResponse}\n\n#100DaysOfCode #Code #Java #javascript #DEVCommunity #programming #programmingmemes`;
       };
       Bot.tweet(Tweet());
     }),
