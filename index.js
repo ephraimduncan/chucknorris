@@ -8,9 +8,9 @@ let npm = fs.readFileSync('./npm.txt', 'utf8').split('\r\n');
 
 const Tweet = () => {
   return `😀😀\n\nWhat does n-p-m stand for? \n${
-    npm[randReal.rand(840)]
+    npm[randReal.rand(838)]
   }\n\n#100DaysOfCode #javascript #DEVCommunity #programming #nodejs #npm`;
 };
 
 Bot.tweet(Tweet());
-console.log(npm[randReal.rand(840)]);
+console.log(npm[randReal.rand(838)]);
