@@ -1,20 +1,14 @@
 const TwitterBot = require('node-twitterbot').TwitterBot;
 const config = require('./config');
-const { default: Axios } = require('axios');
 const Bot = new TwitterBot(config);
+const npm = require('./npm');
+const { randReal } = require('luckyy');
 
-async function postJoke() {
-  try {
-    const jokeResponse = await Axios.get('http://whatthecommit.com/index.txt');
-    const Tweet = () => {
-      return `New Commit Message!\n\n\`\`${jokeResponse.data} \n#100DaysOfCode #javascript #DEVCommunity #programming`;
-    };
-    Bot.tweet(Tweet());
-    console.log(jokeResponse.data);
-  } catch (error) {
-    Bot.tweet(error);
-    console.log(error);
-  }
-}
+const Tweet = () => {
+  return `😀😀\n\nNPM is now \n${
+    npm[randReal.rand(572)]
+  }\n\n#100DaysOfCode #javascript #DEVCommunity #programming #nodejs #npm`;
+};
 
-postJoke();
+Bot.tweet(Tweet());
+console.log(npm[randReal.rand(572)]);
