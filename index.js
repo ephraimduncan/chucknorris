@@ -2,9 +2,7 @@ const TwitterBot = require('node-twitterbot').TwitterBot;
 const config = require('./config');
 const Bot = new TwitterBot(config);
 const { randReal } = require('luckyy');
-const fs = require('fs');
-
-let npm = fs.readFileSync('./npm.txt', 'utf8').split('\r\n');
+const npm = require('./npm');
 
 const Tweet = () => {
   return `😀😀\n\nWhat does n-p-m stand for? \n${
