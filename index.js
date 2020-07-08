@@ -5,7 +5,7 @@ const { randReal } = require('luckyy');
 const npm = require('./npm');
 
 const Tweet = () => {
-  return `😀😀\n\nWhat does n-p-m stand for? \n${
+  return `😀😀\n\nNPM is now \n${
     npm[randReal.rand(838)]
   }\n\n#100DaysOfCode #javascript #DEVCommunity #programming #nodejs #npm`;
 };
