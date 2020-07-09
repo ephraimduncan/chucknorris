@@ -4,7 +4,7 @@
   "description": "A Bot That Post Jokes Every 10 Mins",
   "main": "index.js",
   "scripts": {
-    "push": "git push -u origin npm-heroku && git push heroku npm-heroku",
+    "push": "git push -u origin npm-heroku && git push heroku master",
     "start": "node index.js"
   },
   "keywords": [
