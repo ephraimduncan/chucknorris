@@ -15,7 +15,9 @@ const Tweet = () => {
 
 console.log(npm[randReal.rand(838)]);
 
-app.listen(8000, function () {
+let port = process.env.PORT || 3000;
+
+app.listen(port, function () {
   cron.schedule('*/10 * * * *', () => {
     Bot.tweet(Tweet());
     console.log('Tweet Done');
