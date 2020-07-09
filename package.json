@@ -4,7 +4,7 @@
   "description": "A Bot That Post Jokes Every 10 Mins",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "git push -u origin npm-heroku && git push heroku npm-heroku",
     "start": "node index.js"
   },
   "keywords": [
