@@ -18,7 +18,9 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "luckyy": "^1.0.4",
+    "node-cron": "^2.0.3",
     "node-twitterbot": "^0.2.2",
     "request": "^2.88.2"
   }
