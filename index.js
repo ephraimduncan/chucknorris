@@ -16,7 +16,7 @@ const Tweet = () => {
 console.log(npm[randReal.rand(838)]);
 
 app.listen(8000, function () {
-  cron.schedule('*/10 * * * * *', () => {
+  cron.schedule('*/10 * * * *', () => {
     Bot.tweet(Tweet());
     console.log('Tweet Done');
   });
