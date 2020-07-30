@@ -1,7 +1,7 @@
-// const TwitterBot = require('node-twitterbot').TwitterBot;
-// const config = require('./config');
+const TwitterBot = require('node-twitterbot').TwitterBot;
+const config = require('./config');
 const { default: Axios } = require('axios');
-// const Bot = new TwitterBot(config);
+const Bot = new TwitterBot(config);
 
 async function postJoke() {
   try {
@@ -15,12 +15,11 @@ async function postJoke() {
         jokeResponse.data.author
       } \n#100DaysOfCode #100DaysofProjects #javascript #programming #WiseChuck`;
     };
-    // Bot.tweet(Tweet());
-    // console.log(JSON.stringify(jokeResponse.data.en));
-    console.log(Tweet());
+    Bot.tweet(Tweet());
+    console.log(jokeResponse.data.id);
   } catch (error) {
-    // Bot.tweet(error);
-    // console.log(error);
+    Bot.tweet(error);
+    console.log(error);
   }
 }
 
