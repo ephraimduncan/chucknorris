@@ -12,7 +12,7 @@ async function postJoke() {
     const Tweet = () => {
       return `New Thought!\n\n\`\`${
         jokeResponse.data.data.children[rand(25)].data.title
-      } \n#programming #javascript #Showerthoughts`;
+      } \n#100DaysOfCode #programming #javascript #Showerthoughts`;
     };
 
     Bot.tweet(Tweet());
