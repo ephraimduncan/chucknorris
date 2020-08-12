@@ -2,7 +2,7 @@ name: Tweet
 
 on:
   schedule:
-    - cron: '*/3 * * * *' # Runs Bot every 30 minutes
+    - cron: '*/10 * * * *' # Runs Bot every 30 minutes
 
 jobs:
   build:
